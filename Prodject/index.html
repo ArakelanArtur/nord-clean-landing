@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>NORD CLEAN — химчистка с доставкой в Санкт-Петербурге</title>
+    <meta name="description" content="Химчистка и уход за вещами с доставкой по Санкт-Петербургу. Заберём, аккуратно обработаем и вернём в удобное время.">
+    <!-- Google Fonts & simple reset -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">NORD CLEAN</div>
+            <div class="nav-links">
+                <a href="#services">Услуги</a>
+                <a href="#process">Процесс</a>
+                <a href="#about">О нас</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            <a href="#request" class="btn-outline-light">Заявка</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Блок 1. Первый экран -->
+    <section class="hero" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">Доставка по Санкт-Петербургу</div>
+                <h1>Химчистка и уход за вещами с доставкой по Санкт-Петербургу</h1>
+                <p>Заберём, аккуратно обработаем и вернём ваши вещи в удобное время</p>
+                <div class="hero-desc">
+                    <p>NORD CLEAN — сервис для тех, кто хочет поддерживать одежду, обувь и домашний текстиль в хорошем состоянии, но не хочет тратить время на поездки в пункт приёма. Мы берём на себя полный процесс: от заявки до возврата готового заказа.</p>
+                </div>
+                <a href="#request" class="btn-primary">Оставить заявку</a>
+                <div class="text-muted" style="margin-top: 16px; font-size: 14px;">Менеджер свяжется с вами для уточнения состава заказа и удобного времени доставки.</div>
+            </div>
+            <div class="form-mini" id="request">
+                <h3 style="margin-bottom: 12px;">📋 Заявка за 1 минуту</h3>
+                <p class="text-muted">Оставьте телефон — мы подберём удобный график</p>
+                <form id="leadForm">
+                    <input type="text" placeholder="Ваше имя" id="name" required style="margin-bottom: 12px;">
+                    <input type="tel" placeholder="+7 (___) ___-__-__" id="phone" required style="margin-bottom: 12px;">
+                    <select id="serviceType" style="margin-bottom: 12px;">
+                        <option value="">Тип услуги (примерно)</option>
+                        <option>Химчистка одежды</option>
+                        <option>Стирка + глажка</option>
+                        <option>Уход за обувью</option>
+                        <option>Корпоративный заказ</option>
+                    </select>
+                    <textarea rows="2" placeholder="Комментарий: состав вещей, адрес, время..." style="margin-bottom: 12px;"></textarea>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Отправить заявку</button>
+                    <div class="agree-text">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</div>
+                </form>
+                <div id="formMessage" style="margin-top: 12px; font-size: 13px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 2. О компании -->
+    <section id="about" class="anchor-offset">
+        <div class="container">
+            <div class="section-title">NORD CLEAN — аккуратный уход за вещами без лишних хлопот</div>
+            <div class="section-subtitle">Профессиональная химчистка, стирка и доставка в одном сервисе</div>
+            <div class="grid-2">
+                <div>
+                    <p>NORD CLEAN помогает клиентам экономить время и поддерживать вещи в аккуратном состоянии. Мы организуем полный цикл: принимаем заявку, уточняем состав, забираем вещи, подбираем способ обработки и возвращаем заказ в согласованное время.</p>
+                    <p style="margin-top: 20px;">Каждый заказ рассматривается индивидуально: тип ткани, цвет, загрязнения, рекомендации производителя. Такой подход важен для деликатных материалов, верхней одежды и дорогих изделий.</p>
+                </div>
+                <div>
+                    <p>Сервис построен так, чтобы клиенту было понятно, что происходит с заказом на каждом этапе. Менеджер уточняет детали, предупреждает о возможных ограничениях. После обработки вещи аккуратно упаковываются и возвращаются.</p>
+                    <p style="margin-top: 20px;">Наша задача — не просто очистить вещь, а сохранить её внешний вид, форму и комфорт использования.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 3. Услуги -->
+    <section id="services" class="anchor-offset">
+        <div class="container">
+            <div class="section-title">Уход за вещами под разные задачи</div>
+            <div class="section-subtitle">От повседневной стирки до деликатной химчистки сложных изделий</div>
+            <div class="grid-4">
+                <div class="service-card"><div class="card-icon">🧥</div><h3>Химчистка одежды</h3><div class="text-muted">Пальто, пуховики, костюмы, платья — профессиональный уход с оценкой материала и фурнитуры.</div></div>
+                <div class="service-card"><div class="card-icon">🧺</div><h3>Стирка и глажка</h3><div class="text-muted">Постельное бельё, рубашки, полотенца. Регулярная стирка для занятых семей.</div></div>
+                <div class="service-card"><div class="card-icon">👟</div><h3>Уход за обувью</h3><div class="text-muted">Чистка, восстановление вида, подготовка к сезону. Бережно и аккуратно.</div></div>
+                <div class="service-card"><div class="card-icon">🏢</div><h3>Корпоративные заказы</h3><div class="text-muted">Салоны, шоурумы, офисы — регулярный уход за текстилем и формой.</div></div>
+            </div>
+            <div class="text-muted" style="margin-top: 32px; text-align: center;">Также работаем с домашним текстилем, пледами, пуховиками. Курьерская доставка вещей входит в услугу.</div>
+        </div>
+    </section>
+
+    <!-- Блок 4. Процесс -->
+    <section id="process" class="anchor-offset">
+        <div class="container">
+            <div class="section-title">Простой процесс от заявки до возврата вещей</div>
+            <div class="section-subtitle">Понятная схема работы, чтобы клиент знал, что происходит с заказом</div>
+            <div class="grid-3">
+                <div class="step-card"><div class="card-icon">1️⃣</div><h3>Заявка</h3><div class="text-muted">Имя, телефон, тип услуги и комментарий: состав вещей, удобное время забора.</div></div>
+                <div class="step-card"><div class="card-icon">2️⃣</div><h3>Уточнение деталей</h3><div class="text-muted">Менеджер свяжется, уточнит особенности вещей и формат обработки.</div></div>
+                <div class="step-card"><div class="card-icon">🚚</div><h3>Забор вещей</h3><div class="text-muted">Курьер приедет по адресу в удобное время — без поездок в пункт приёма.</div></div>
+                <div class="step-card"><div class="card-icon">🧼</div><h3>Обработка</h3><div class="text-muted">Химчистка, стирка, глажка или комбинированный уход в зависимости от типа изделия.</div></div>
+                <div class="step-card"><div class="card-icon">📦</div><h3>Возврат заказа</h3><div class="text-muted">Аккуратная упаковка и доставка обратно, с комментариями по результату.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 5. Преимущества -->
+    <section>
+        <div class="container">
+            <div class="section-title">Почему клиенты выбирают NORD CLEAN</div>
+            <div class="section-subtitle">Удобство доставки, аккуратный подход и понятная коммуникация</div>
+            <div class="grid-2">
+                <div>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 18px;">✅ <strong>Доставка по городу</strong> — забираем и привозим вещи назад.</li>
+                        <li style="margin-bottom: 18px;">✅ <strong>Индивидуальный подход</strong> — учитываем ткань, пятна, пожелания.</li>
+                        <li style="margin-bottom: 18px;">✅ <strong>Деликатные материалы</strong> — опыт работы с кашемиром, шерстью, шёлком.</li>
+                        <li style="margin-bottom: 18px;">✅ <strong>Аккуратная упаковка</strong> — вещи возвращаются в идеальном виде.</li>
+                        <li>✅ <strong>Понятная коммуникация</strong> — менеджер на всех этапах.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Клиент может оставить заявку онлайн, согласовать время забора и получить готовый заказ обратно без поездок. Отдельное внимание уделяется коммуникации: вы всегда знаете статус заказа и когда ждать вещи.</p>
+                    <p style="margin-top: 20px;">Хороший сервис — это не только результат чистки, но и спокойствие клиента.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 6. Для кого подходит -->
+    <section>
+        <div class="container">
+            <div class="section-title">Кому подойдут наши услуги</div>
+            <div class="section-subtitle">Сервис для частных клиентов, семей, деловых людей и небольших компаний</div>
+            <div class="grid-3">
+                <div class="who-card"><div class="card-icon">🏠</div><h3>Частные клиенты</h3><div class="text-muted">Сезонная чистка пальто, подготовка к поездке, уход за деликатным платьем.</div></div>
+                <div class="who-card"><div class="card-icon">👨‍👩‍👧‍👦</div><h3>Семьи</h3><div class="text-muted">Постельное бельё, детские вещи, пледы — без бытовой рутины.</div></div>
+                <div class="who-card"><div class="card-icon">💼</div><h3>Деловые клиенты</h3><div class="text-muted">Костюмы, рубашки, пальто всегда в идеальном состоянии.</div></div>
+                <div class="who-card"><div class="card-icon">🏢</div><h3>Малый бизнес</h3><div class="text-muted">Салоны, студии, офисы: образцы одежды, текстиль после съёмок.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок 7 форма + контакты -->
+    <section id="contacts" class="anchor-offset">
+        <div class="container">
+            <div class="contact-line">
+                <div>
+                    <h3>📞 Свяжитесь с нами</h3>
+                    <p style="margin-top: 8px;">Телефон: <strong>+7 999 123-45-67</strong><br>Email: <strong>hello@nordclean.ru</strong><br>Санкт-Петербург | Ежедневно 9:00–21:00</p>
+                    <p class="text-muted" style="margin-top: 16px;">Время забора и возврата согласуем индивидуально.</p>
+                </div>
+                <div style="min-width: 200px;">
+                    <h3>💬 Помощь онлайн</h3>
+                    <p>Оставьте заявку, и менеджер перезвонит для уточнения деталей.</p>
+                    <a href="#request" class="btn-primary" style="margin-top: 12px; display: inline-block;">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок FAQ (доп. задание) -->
+    <section>
+        <div class="container">
+            <div class="section-title">Частые вопросы</div>
+            <div class="faq-item">
+                <div class="faq-question">❓ Сколько дней занимает чистка?<span>▼</span></div>
+                <div class="faq-answer">Обычно 2–4 дня. Срочную обработку можем сделать за 24 часа — уточняйте у менеджера.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">❓ Есть ли доставка по пригородам?<span>▼</span></div>
+                <div class="faq-answer">Да, обсуждаем индивидуально. Работаем по Санкт-Петербургу и области в пределах КАД +10 км.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">❓ Что если вещь после чистки потеряла вид?<span>▼</span></div>
+                <div class="faq-answer">Мы всегда проводим предварительную диагностику и предупреждаем о рисках. При нашем браке — несём ответственность.</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">© 2025 NORD CLEAN — химчистка с доставкой. Вымышленный сервис для тестового задания.</div>
+</footer>
+<link rel="stylesheet" href="script.js">
+</body>
+</html>
